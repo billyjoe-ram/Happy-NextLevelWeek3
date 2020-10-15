@@ -15,7 +15,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // Create icon
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68]
 });
@@ -38,7 +38,6 @@ function selectImage(event) {
     buttons.forEach(removeActiveClass);
 
     // Select the image
-
     const image = button.children[0];
     const imageContainer = document.querySelector(".orphanage-details > img");
     
