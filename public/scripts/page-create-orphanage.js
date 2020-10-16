@@ -12,6 +12,7 @@ const icon = L.icon({
 });
 
 let marker;
+const crdntOK = false;
 
 // Create and add marker
 map.on('click', (event) => {
@@ -78,3 +79,8 @@ function toggleSelect(event) {
     // Check value
     input.value = button.dataset.value;
 };
+
+function validate(event) {        
+    console.log(event)
+    
+}
